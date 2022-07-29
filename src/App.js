@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CuisineWrapper from "./components/cuisineCards/CuisineWrapper";
+import Header from "./components/header/Header";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RecipeCard from "./components/recipeDetails/RecipeCard";
 
 function App() {
+  const [cuisine, setCuisine] = useState(null);
+
+  function cuisineSelected(cuisine) {
+    setCuisine(cuisine);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <>
+        <Header cuisineSelect={cuisineSelected} />
+        <CuisineWrapper selectedCuisine={cuisine} />
+        <Routes>
+          <Route path="/recipe/:recipeID" element={<RecipeCard />}></Route>
+        </Routes>
+      </>
+    </Router>
   );
 }
 
