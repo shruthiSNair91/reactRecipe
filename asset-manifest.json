@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reactRecipe/static/css/main.c4c756b6.css",
+    "main.js": "/reactRecipe/static/js/main.f5c804e6.js",
+    "static/js/787.5af8730f.chunk.js": "/reactRecipe/static/js/787.5af8730f.chunk.js",
+    "index.html": "/reactRecipe/index.html",
+    "static/media/Group.svg": "/reactRecipe/static/media/Group.8ee15c94baf20f7f6560c215407c25fd.svg",
+    "static/media/Time.svg": "/reactRecipe/static/media/Time.e8fa88a9d0540161fd1313284121705f.svg",
+    "main.c4c756b6.css.map": "/reactRecipe/static/css/main.c4c756b6.css.map",
+    "main.f5c804e6.js.map": "/reactRecipe/static/js/main.f5c804e6.js.map",
+    "787.5af8730f.chunk.js.map": "/reactRecipe/static/js/787.5af8730f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4c756b6.css",
+    "static/js/main.f5c804e6.js"
+  ]
+}
